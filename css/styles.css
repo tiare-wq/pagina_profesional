@@ -54,6 +54,10 @@ nav img {
     padding: 5px;
 }
 
+.animate-bounce {
+    animation: bounce 1s infinite;
+}
+
 .arcoiris {
     background: linear-gradient(to right, #FD4B66, #FA3082, #FFB79A, #47FCF6, #00C2CB, #C4637A, #B14AED);
     -webkit-background-clip: text;
@@ -114,6 +118,23 @@ nav img {
 .encabezados {
     display: flex;
     flex-direction: column;
+}
+
+.explorar {
+    background: transparent;
+    border: none;
+    transition: color 0.3s ease;
+
+    margin-top: 4%;
+}
+
+.explorar-texto {
+    color: #4c4c50;
+    font-size: 20px;
+}
+
+.explorar:hover, .explorar-texto:hover {
+    color: white;
 }
 
 .habilidades {
@@ -181,6 +202,16 @@ nav img {
     justify-content: space-between; /* Uno a la izquierda y otro a la derecha */
     width: 100%;
     gap: 20px; 
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(-25%);
+    }
+
+    50% {
+        transform: translateY(0);
+    }
 }
 
 @media only screen and (max-width: 900px) {

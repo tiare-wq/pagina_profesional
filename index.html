@@ -20,10 +20,18 @@
             <a href="#carouselExampleDark" class="btn btn-primary" type="button">Portafolio</a>
             <a href="#contacto" class="btn btn-primary" type="button">Contáctame</a>
         </div>
+        <a class="explorar" href="#proyectos">
+            <div class="d-flex flex-column align-items-center gap-2">
+                <span class="explorar-texto">Explorar proyectos</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-down w-5 h-5 animate-bounce">
+                    <path d="m6 9 6 6 6-6"></path>
+                </svg>
+            </div>
+        </a>
     </header>
     <main>
         <div id="principal">
-            <div class="container-md">
+            <div id="proyectos" class="container-md">
                 <div id="carouselExampleDark" class="carousel carousel-dark slide">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -32,19 +40,17 @@
                     </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="10000">
-                            <img src="img/pharmanet.png" class="d-block w-100" alt="...">
+                            <img src="img/pharmanet.png" class="d-block w-100" alt="Pharmanet">
                             <div class="carousel-caption d-none d-md-block">
-                                <a href="https://github.com/tiare-wq/Inventario-Pharmanet.git"><h4>Simulación</h4></a>
-                                <p>Desarrollo de backend en Spring Boot el tercer semestre de mi carrera. Simula una aplicación de 
-                                gestión de inventario de farmacia trabajo en pareja utilizando GitHub. Se utiliza una base de datos escritas en
-                                PostgreSQL y Oracle. JaCoCo 80% >.</p>
+                                <a href="https://github.com/tiare-wq/Inventario-Pharmanet.git"><h4>Farmacia Microservicios</h4></a>
+                                <p>Plataforma inspirada en la gestión de inventario de una farmacia. Arquitectura de microservicios basada en SpringBoot. JaCoCo 80% >.</p>
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="img/formNutrivida.png" class="d-block w-100" alt="...">
+                            <img src="img/formNutrivida.png" class="d-block w-100" alt="Nutrivida">
                             <div class="carousel-caption d-none d-md-block">
                                 <a href="https://tiare-wq.github.io/Nutrivida/" target="_blank"><h4>NutriVida</h4></a>
-                                <p>Página web de clínica nutricional desarrollada en HTML y CSS. Simula reserva utilizando JavaScript.</p>
+                                <p>Página web de clínica nutricional desarrollada en REACT.</p>
                             </div>
                         </div>
                         <!-- <div class="carousel-item" data-bs-interval="2000">
@@ -56,7 +62,7 @@
                             </div>
                         </div> -->
                         <div class="carousel-item">
-                            <img src="img/minijuego.jpg" class="d-block w-100" alt="...">
+                            <img src="img/minijuego.jpg" class="d-block w-100" alt="Adivina el número secreto">
                             <div class="carousel-caption d-none d-md-block">
                                 <a href="https://github.com/tiare-wq/numero-secreto.git"><h4>MiniJuego</h4></a>
                                 <p>Minijuego realizado en Python. Es un juego de estrategia que te da pistas para adivinar un número secreto.
